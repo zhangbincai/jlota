@@ -1,4 +1,4 @@
 jdk:
-  - 17
+  - openjdk17
 install:
-  - mvn install:install-file -Dfile=./jl_bt_ota_V1.11.0_11015-release.aar -DpomFile=pom.xml
+  - mvn deploy:deploy-file -Dfile=./jl_bt_ota_V1.11.0_11015-release.aar -DpomFile=pom.xml -Durl=https://jitpack.io -DrepositoryId=jitpack

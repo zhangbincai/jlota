@@ -2,3 +2,5 @@ jdk:
   - openjdk17
 install:
   - mvn install:install-file -Dfile=jl_bt_ota_V1.11.0_11015-release.aar -DgroupId=com.github.zhangbincai -DartifactId=jlota -Dversion=1.11.0 -Dpackaging=aar
+  - mkdir -p target
+  - cp jl_bt_ota_V1.11.0_11015-release.aar target/jlota-1.11.0.aar

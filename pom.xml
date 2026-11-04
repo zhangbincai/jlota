@@ -4,6 +4,5 @@
     <groupId>com.github.zhangbincai</groupId>
     <artifactId>jlota</artifactId>
     <version>1.11.0</version>
-    <!-- 这里改成jar，Maven才能正常解析pom -->
     <packaging>jar</packaging>
 </project>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.zhangbincai</groupId>
     <artifactId>jlota</artifactId>
     <version>1.11.0</version>
+    <packaging>aar</packaging>
 </project>

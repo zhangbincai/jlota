@@ -1,17 +1,4 @@
 jdk:
   - openjdk17
 install:
-  - mkdir -p target
-  - cp jlota.aar target/jlota-4.0.0.aar
-  - cat > target/pom.xml <<EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.zhangbincai</groupId>
-    <artifactId>jlota</artifactId>
-    <version>4.0.0</version>
-    <packaging>aar</packaging>
-</project>
-EOF
+  - mvn install:install-file -Dfile=jl_bt_ota_V1.11.0_11015-release.aar -DgroupId=com.github.zhangbincai -DartifactId=jlota -Dversion=1.11.0 -Dpackaging=aar

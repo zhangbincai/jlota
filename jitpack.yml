@@ -1,4 +1,17 @@
 jdk:
   - openjdk17
 install:
-  - mvn deploy:deploy-file -Dfile=./jl_bt_ota_V1.11.0_11015-release.aar -DpomFile=pom.xml -Durl=https://jitpack.io -DrepositoryId=jitpack
+  - mkdir -p target
+  - cp jlota.aar target/jlota-4.0.0.aar
+  - cat > target/pom.xml <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.zhangbincai</groupId>
+    <artifactId>jlota</artifactId>
+    <version>4.0.0</version>
+    <packaging>aar</packaging>
+</project>
+EOF
